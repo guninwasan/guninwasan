@@ -51,13 +51,13 @@ h2 {
 h1 {
   color: aliceblue;
 }
-.circular-box1 {
+.circular-box{
   position: relative;
-  left: 300px;
-  top: 200px;
-  width: 20cm;
+  left: 100px;
+  top: 100px;
+  width: 10cm;
 
-  font-size: 4cm;
+  font-size: 2cm;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -73,85 +73,7 @@ h1 {
   background: linear-gradient(to bottom right, #ff5050 0%, #3333ff 100%);
   cursor: pointer;
 }
-.circular-box1:hover {
-  background: linear-gradient(to bottom left, #99ccff 0%, #000066 100%);
-}
-
-.circular-box2 {
-  position: relative;
-  left: 50px;
-  top: 250px;
-  width: 20cm;
-
-  font-size: 4cm;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-
-  align-self: start;
-  text-align: center;
-  border: 2px solid rgba(10, 10, 10, 0.931);
-  border-radius: 50%;
-  color: aliceblue;
-  padding: 10px;
-  transition-duration: 0.4s;
-  /* https://www.w3schools.com/colors/colors_gradient.asp */
-  background: linear-gradient(to bottom right, #ff5050 0%, #3333ff 100%);
-  cursor: pointer;
-}
-.circular-box2:hover {
-  background: linear-gradient(to bottom left, #99ccff 0%, #000066 100%);
-}
-
-.circular-box3 {
-  position: relative;
-  left: 50px;
-  top: 250px;
-  width: 20cm;
-
-  font-size: 4cm;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-
-  align-self: start;
-  text-align: center;
-  border: 2px solid rgba(10, 10, 10, 0.931);
-  border-radius: 50%;
-  color: aliceblue;
-  padding: 10px;
-  transition-duration: 0.4s;
-  /* https://www.w3schools.com/colors/colors_gradient.asp */
-  background: linear-gradient(to bottom right, #ff5050 0%, #3333ff 100%);
-  cursor: pointer;
-}
-.circular-box3:hover {
-  background: linear-gradient(to bottom left, #99ccff 0%, #000066 100%);
-}
-
-.circular-box4 {
-  position: relative;
-  left: 500px;
-  top: 170px;
-  width: 20cm;
-
-  font-size: 4cm;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-
-  align-self: start;
-  text-align: center;
-  border: 2px solid rgba(10, 10, 10, 0.931);
-  border-radius: 50%;
-  color: aliceblue;
-  padding: 10px;
-  transition-duration: 0.4s;
-  /* https://www.w3schools.com/colors/colors_gradient.asp */
-  background: linear-gradient(to bottom right, #ff5050 0%, #3333ff 100%);
-  cursor: pointer;
-}
-.circular-box4:hover {
+.circular-box:hover {
   background: linear-gradient(to bottom left, #99ccff 0%, #000066 100%);
 }
 

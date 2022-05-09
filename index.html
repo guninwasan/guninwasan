@@ -10,11 +10,14 @@
 
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+
     <title>Resume</title>
     <link rel="stylesheet" href="design.css" />
-
-    <script src="script.js"></script>
+    <link rel="icon" href="images/favicon.png" />
+    <script src="https://unpkg.com/scrollreveal" defer></script>
+    <script src="script.js" defer></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
   </head>
   <body>
     <!-- We need to divide into columns here -->
@@ -80,9 +83,14 @@
         Connect
       </button>
     </div>
-    <!-- </section> -->
 
-    <div id="About">
+    <div id="scrolling">
+      <div class="chevron"></div>
+      <div class="chevron"></div>
+      <div class="chevron"></div>
+    </div>
+    <!-- </section> -->
+    <div class="About" id="About">
       <h5 style="color: aliceblue; text-align: right; font-size: 4cm">
         <img src="images/Gunin Wasan.png" width="250" height="400" />
         &nbsp &nbsp &nbsp &nbsp &nbsp Hi!
@@ -95,7 +103,7 @@
     <!-- To add: skills, education, projects, work exp, volunteer -->
 
     <!-- Education section here -->
-    <div id="Education">
+    <div class="Education" id="Education">
       <h1>Education</h1>
 
       <div class="vl">
@@ -207,7 +215,7 @@
 
     <!-- Skills section is here -->
     <!-- https://codepen.io/alvarotrigo/pen/VwMvydQ -->
-    <div id="Skills">
+    <div class="Skills" id="Skills">
       <h1>Skills</h1>
       <div class="container">
         <div class="container__progressbars">
@@ -315,7 +323,7 @@
       </div>
     </div>
 
-    <div id="Projects">
+    <div class="Projects" id="Projects">
       <h1>Personal/School Projects</h1>
       <div class="cards">
         <div class="col">
@@ -384,7 +392,7 @@
       </div>
     </div>
 
-    <div id="Connect">
+    <div class="Connect" id="Connect">
       <h1>Connect With me!</h1>
       <!-- Added icon library here-->
       <h2>

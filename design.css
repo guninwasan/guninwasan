@@ -1,0 +1,446 @@
+/* .container {
+  width: 320px;
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 0;
+} */
+
+.button1 {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 50%;
+}
+
+body {
+    background-color: rgba(10, 10, 10, 0.938);
+  /* background-color: rgba(10, 10, 10, 0.931); */
+}
+
+
+
+
+h6{
+    /* Projects */
+    color: aliceblue;
+    font-size: 20px;
+}
+h5 {
+  /* School Logo */
+  color: aliceblue;
+  font-size: 0.96cm;
+  filter: drop-shadow(0 0 5px rgb(35, 182, 196));
+}
+h4 {
+  color: aliceblue;
+  font-size: 0.5cm;
+  /* filter: drop-shadow(0 0 5px #f63); */
+}
+
+h3 {
+  /* Uni Logo */
+  color: aliceblue;
+  font-size: 1.2cm;
+  filter: drop-shadow(0 0 5px #f63);
+}
+
+h2 {
+  /* Skills Heading */
+  text-align: center;
+  color: rgb(228, 109, 11);
+}
+h1 {
+  color: aliceblue;
+}
+.circular-box1 {
+  position: relative;
+  left: 300px;
+  top: 200px;
+  width: 20cm;
+
+  font-size: 4cm;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  align-self: start;
+  text-align: center;
+  border: 2px solid rgba(10, 10, 10, 0.931);
+  border-radius: 50%;
+  color: aliceblue;
+  padding: 10px;
+  transition-duration: 0.4s;
+  /* https://www.w3schools.com/colors/colors_gradient.asp */
+  background: linear-gradient(to bottom right, #ff5050 0%, #3333ff 100%);
+  cursor: pointer;
+}
+.circular-box1:hover {
+  background: linear-gradient(to bottom left, #99ccff 0%, #000066 100%);
+}
+
+.circular-box2 {
+  position: relative;
+  left: 50px;
+  top: 250px;
+  width: 20cm;
+
+  font-size: 4cm;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  align-self: start;
+  text-align: center;
+  border: 2px solid rgba(10, 10, 10, 0.931);
+  border-radius: 50%;
+  color: aliceblue;
+  padding: 10px;
+  transition-duration: 0.4s;
+  /* https://www.w3schools.com/colors/colors_gradient.asp */
+  background: linear-gradient(to bottom right, #ff5050 0%, #3333ff 100%);
+  cursor: pointer;
+}
+.circular-box2:hover {
+  background: linear-gradient(to bottom left, #99ccff 0%, #000066 100%);
+}
+
+.circular-box3 {
+  position: relative;
+  left: 50px;
+  top: 250px;
+  width: 20cm;
+
+  font-size: 4cm;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  align-self: start;
+  text-align: center;
+  border: 2px solid rgba(10, 10, 10, 0.931);
+  border-radius: 50%;
+  color: aliceblue;
+  padding: 10px;
+  transition-duration: 0.4s;
+  /* https://www.w3schools.com/colors/colors_gradient.asp */
+  background: linear-gradient(to bottom right, #ff5050 0%, #3333ff 100%);
+  cursor: pointer;
+}
+.circular-box3:hover {
+  background: linear-gradient(to bottom left, #99ccff 0%, #000066 100%);
+}
+
+.circular-box4 {
+  position: relative;
+  left: 500px;
+  top: 170px;
+  width: 20cm;
+
+  font-size: 4cm;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  align-self: start;
+  text-align: center;
+  border: 2px solid rgba(10, 10, 10, 0.931);
+  border-radius: 50%;
+  color: aliceblue;
+  padding: 10px;
+  transition-duration: 0.4s;
+  /* https://www.w3schools.com/colors/colors_gradient.asp */
+  background: linear-gradient(to bottom right, #ff5050 0%, #3333ff 100%);
+  cursor: pointer;
+}
+.circular-box4:hover {
+  background: linear-gradient(to bottom left, #99ccff 0%, #000066 100%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* #header-section{
+    background: #99ccff;
+} */
+
+#Skills {
+  font-size: xx-large;
+}
+
+.container__progressbars {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  min-width: 280px;
+  width: 100%;
+  min-height: 100%;
+}
+.progressbar {
+  position: relative;
+  width: 170px;
+  height: 170px;
+  margin: 1em;
+  transform: rotate(-90deg);
+}
+.progressbar__svg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.progressbar__svg-circle {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke-width: 10;
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  stroke: rgb(51, 255, 112);
+  stroke-linecap: round;
+  transform: translate(5px, 5px);
+}
+.shadow-cpp {
+  filter: drop-shadow(0 0 5px #f63);
+}
+.shadow-c {
+  filter: drop-shadow(0 0 5px rgb(236, 186, 78));
+}
+.shadow-python {
+  filter: drop-shadow(0 0 5px #f3f);
+}
+.shadow-js {
+  filter: drop-shadow(0 0 5px #ff3);
+}
+.shadow-html {
+  filter: drop-shadow(0 0 5px rgb(156, 73, 152));
+}
+.shadow-css {
+  filter: drop-shadow(0 0 5px #5f3);
+}
+.shadow-matlab {
+  filter: drop-shadow(0 0 5px #3ff);
+}
+.shadow-mysql {
+  filter: drop-shadow(0 0 5px #f33);
+}
+.shadow-vue {
+  filter: drop-shadow(0 0 5px #3f8);
+}
+.circle-cpp {
+  animation: anim_circle-cpp 4s ease-in-out forwards;
+}
+.circle-c {
+  animation: anim_circle-c 4s ease-in-out forwards;
+}
+.circle-python {
+  animation: anim_circle-python 4s ease-in-out forwards;
+}
+.circle-js {
+  animation: anim_circle-js 8s ease-in-out forwards;
+}
+.circle-html {
+  animation: anim_circle-html 8s ease-in-out forwards;
+}
+.circle-css {
+  animation: anim_circle-css 8s ease-in-out forwards;
+}
+.circle-matlab {
+  animation: anim_circle-matlab 10s ease-in-out forwards;
+}
+.circle-mysql {
+  animation: anim_circle-mysql 10s ease-in-out forwards;
+}
+.circle-vue {
+  animation: anim_circle-vue 1s ease-in-out forwards;
+}
+.progressbar__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 0.25em 0.5em;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 0.25em;
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+@keyframes anim_circle-cpp {
+  to {
+    stroke-dashoffset: 32;
+  }
+}
+@keyframes anim_circle-c {
+  to {
+    stroke-dashoffset: 42;
+  }
+}
+@keyframes anim_circle-python {
+  to {
+    stroke-dashoffset: 42;
+  }
+}
+@keyframes anim_circle-js {
+  to {
+    stroke-dashoffset: 120;
+  }
+}
+@keyframes anim_circle-html {
+  to {
+    stroke-dashoffset: 100;
+  }
+}
+@keyframes anim_circle-css {
+  to {
+    stroke-dashoffset: 140;
+  }
+}
+@keyframes anim_circle-matlab {
+  to {
+    stroke-dashoffset: 70;
+  }
+}
+@keyframes anim_circle-mysql {
+  to {
+    stroke-dashoffset: 40;
+  }
+}
+@keyframes anim_circle-vue {
+  to {
+    stroke-dashoffset: 431.2;
+  }
+}
+
+.vl {
+  border-left: 6px solid orange;
+  height: 600px;
+  position: relative;
+  left: 50%;
+  margin-left: -3px;
+  top: 0;
+}
+
+a:link {
+  color: rgb(56, 235, 24);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+    color: rgb(56, 235, 24);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+
+.cards {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 80px;
+}
+.card {
+	box-shadow: 2px 8px 14px 0px hsla(229, 6%, 66%, 0.6);
+	border-radius: 8px;
+	padding: 30px;
+	margin: 2rem 0;
+	max-width: 400px;
+}
+.card.aqua {
+	border-top: 5px solid hsl(180, 62%, 55%);
+	margin: 0;
+}
+.card.red {
+	border-top: 5px solid hsl(0, 78%, 62%);
+}
+.card.orange {
+	border-top: 5px solid hsl(34, 97%, 64%);
+}
+.card.blue {
+	border-top: 5px solid hsl(212, 86%, 64%);
+	margin: 0;
+}
+
+.card img {
+	display: block;
+	margin-left: auto;
+	margin-top: 30px;
+}
+.card h2 {
+	color: hsl(234, 12%, 34%);
+	font-size: 1.5rem;
+}
+.card p {
+	font-size: 1rem;
+	color: hsl(229, 6%, 66%);
+}
+
+@media only screen and (min-width: 1200px) {
+	body {
+		font-size: 18px;
+	}
+	header h1,
+	header h2 {
+		font-size: 2em;
+	}
+	header p {
+		font-size: 1.1rem;
+	}
+	.cards {
+		flex-direction: row;
+	}
+	.card {
+		margin: 2rem;
+	}
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-github {
+    background: #007bb5;
+    color: white;
+}
+
+
+/* #Skills{
+    background-color: rgba(10, 10, 10, 0.911);
+} */
+
+
+/* .light-mode {
+    background-color: aliceblue;
+    color: black;
+} */
+/* p{
+    text-align: center;
+} */
+
+/* 
+  * {
+    text-align: center;
+    color: rgb(99, 13, 13);
+  } */

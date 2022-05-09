@@ -22,52 +22,73 @@
         and bubbles(boxes) with links.
      -->
     <!-- use spline for animated characters. now make boxes and add color -->
-    <!-- <section>
-      <div id="header-section">
+    <!-- <section> -->
+    <div id="header-section">
+      <a href="page-not-found.html">
         <button
           type="button"
-          class="circular-box1"
-          onclick="location.href='#Skills'"
+          class="circular-box"
+          onclick="location.href='#'"
+          style="left: 23%; width: 20cm"
         >
-          Button1
+          Interactive Resume
         </button>
-        <button
-          type="button"
-          class="circular-box2"
-          onclick="location.href='#Education'"
-        >
-          Button2
-        </button>
-
-        <button
-          type="button"
-          class="circular-box3"
-          onclick="location.href='#Projects'"
-        >
-          Button3
-        </button>
-
-        <button
-          type="button"
-          class="circular-box4"
-          onclick="location.href='#top'"
-        >
-          Button4
-        </button>
-
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      </a>
+      <!-- Animated character made using Spline -->
+      <div id="contentframe" style="position: relative; top: 100px; left: 30%">
+        <iframe
+          src="https://my.spline.design/grogucopy-3fe6a65efb2016d12ebeb2b862d96ca8/"
+          frameborder="0"
+          width="500px"
+          height="500px"
+        ></iframe>
       </div>
-    </section> -->
+
+      <button
+        type="button"
+        class="circular-box"
+        onclick="location.href='#Education'"
+        style="left: 2cm; top: -340px"
+      >
+        Education
+      </button>
+
+      <button
+        type="button"
+        class="circular-box"
+        onclick="location.href='#Projects'"
+        style="left: -8cm; top: -100px"
+      >
+        Projects
+      </button>
+
+      <button
+        type="button"
+        class="circular-box"
+        onclick="location.href='#Skills'"
+        style="left: 5cm; top: -330px"
+      >
+        Skills
+      </button>
+
+      <button
+        type="button"
+        class="circular-box"
+        onclick="location.href='#Connect'"
+        style="left: 25cm; top: -220px"
+      >
+        Connect
+      </button>
+    </div>
+    <!-- </section> -->
 
     <div id="About">
-      <h5 style="color: aliceblue; text-align: right; font-size: 4cm;">
-        
-        <img src="images/Gunin Wasan.png" width="250" height="400">&nbsp &nbsp &nbsp &nbsp 
-        &nbsp &nbsp &nbsp 
-        Hi! <img src="images/waving-hand.png" width="170" height="170"> &nbsp &nbsp
-        I'm Gunin &nbsp &nbsp
-    </h5>
-    
+      <h5 style="color: aliceblue; text-align: right; font-size: 4cm">
+        <img src="images/Gunin Wasan.png" width="250" height="400" />
+        &nbsp &nbsp &nbsp &nbsp &nbsp Hi!
+        <img src="images/waving-hand.png" width="170" height="170" /> &nbsp
+        &nbsp I'm Gunin &nbsp &nbsp
+      </h5>
     </div>
 
     <!-- We can add nav bar after this -->
@@ -373,11 +394,13 @@
         />
         <a
           href="https://www.linkedin.com/in/guninwasan/"
+          target="_blank"
           class="fa fa-linkedin"
           style="background: #007bb5; color: aliceblue"
         ></a>
         <a
           href="https://github.com/guninwasan"
+          target="_blank"
           class="fa fa-github"
           style="background: black; color: aliceblue"
         ></a>

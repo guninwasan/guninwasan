@@ -12,17 +12,15 @@
 }
 
 body {
-    background-color: rgba(10, 10, 10, 0.938);
+  background-color: rgba(10, 10, 10, 0.938);
+  overflow-x: hidden;
   /* background-color: rgba(10, 10, 10, 0.931); */
 }
 
-
-
-
-h6{
-    /* Projects */
-    color: aliceblue;
-    font-size: 20px;
+h6 {
+  /* Projects */
+  color: aliceblue;
+  font-size: 20px;
 }
 h5 {
   /* School Logo */
@@ -51,7 +49,7 @@ h2 {
 h1 {
   color: aliceblue;
 }
-.circular-box{
+.circular-box {
   position: relative;
   left: 100px;
   top: 100px;
@@ -167,14 +165,12 @@ html {
   animation: anim_circle-css 8s ease-in-out forwards;
 }
 .circle-matlab {
-  animation: anim_circle-matlab 10s ease-in-out forwards;
+  animation: anim_circle-matlab 30s ease-in-out forwards;
 }
 .circle-mysql {
-  animation: anim_circle-mysql 10s ease-in-out forwards;
+  animation: anim_circle-mysql 30s ease-in-out forwards;
 }
-.circle-vue {
-  animation: anim_circle-vue 1s ease-in-out forwards;
-}
+
 .progressbar__text {
   position: absolute;
   top: 50%;
@@ -247,7 +243,7 @@ a:link {
 }
 
 a:visited {
-    color: rgb(56, 235, 24);
+  color: rgb(56, 235, 24);
   background-color: transparent;
   text-decoration: none;
 }
@@ -264,94 +260,205 @@ a:active {
   text-decoration: underline;
 }
 
-
-
 .cards {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 80px;
 }
 .card {
-	box-shadow: 2px 8px 14px 0px hsla(229, 6%, 66%, 0.6);
-	border-radius: 8px;
-	padding: 30px;
-	margin: 2rem 0;
-	max-width: 400px;
+  box-shadow: 2px 8px 14px 0px hsla(229, 6%, 66%, 0.6);
+  border-radius: 8px;
+  padding: 30px;
+  margin: 2rem 0;
+  max-width: 400px;
 }
 .card.aqua {
-	border-top: 5px solid hsl(180, 62%, 55%);
-	margin: 0;
+  border-top: 5px solid hsl(180, 62%, 55%);
+  margin: 0;
 }
 .card.red {
-	border-top: 5px solid hsl(0, 78%, 62%);
+  border-top: 5px solid hsl(0, 78%, 62%);
 }
 .card.orange {
-	border-top: 5px solid hsl(34, 97%, 64%);
+  border-top: 5px solid hsl(34, 97%, 64%);
 }
 .card.blue {
-	border-top: 5px solid hsl(212, 86%, 64%);
-	margin: 0;
+  border-top: 5px solid hsl(212, 86%, 64%);
+  margin: 0;
 }
 
 .card img {
-	display: block;
-	margin-left: auto;
-	margin-top: 30px;
+  display: block;
+  margin-left: auto;
+  margin-top: 30px;
 }
 .card h2 {
-	color: hsl(234, 12%, 34%);
-	font-size: 1.5rem;
+  color: hsl(234, 12%, 34%);
+  font-size: 1.5rem;
 }
 .card p {
-	font-size: 1rem;
-	color: hsl(229, 6%, 66%);
+  font-size: 1rem;
+  color: hsl(229, 6%, 66%);
 }
 
 @media only screen and (min-width: 1200px) {
-	body {
-		font-size: 18px;
-	}
-	header h1,
-	header h2 {
-		font-size: 2em;
-	}
-	header p {
-		font-size: 1.1rem;
-	}
-	.cards {
-		flex-direction: row;
-	}
-	.card {
-		margin: 2rem;
-	}
+  body {
+    font-size: 18px;
+  }
+  header h1,
+  header h2 {
+    font-size: 2em;
+  }
+  header p {
+    font-size: 1.1rem;
+  }
+  .cards {
+    flex-direction: row;
+  }
+  .card {
+    margin: 2rem;
+  }
 }
 
 .fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-  }
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
 
 .fa-linkedin {
-    background: #007bb5;
-    color: white;
+  background: #007bb5;
+  color: white;
 }
 
 .fa-github {
-    background: #007bb5;
-    color: white;
+  background: #007bb5;
+  color: white;
 }
 
+#header-small {
+  display: none;
+  background: red;
+  padding: 2%;
+  position: fixed;
+  top: 0px;
+  width: 960%;
+}
 
+.chevron {
+  top: 90%;
+  left: 49%;
+  align-items: center;
+  position: absolute;
+  width: 28px;
+  height: 8px;
+  opacity: 0;
+  transform: scale3d(0.5, 0.5, 0.5);
+  animation: move 3s ease-out infinite;
+}
+
+.chevron:first-child {
+  animation: move 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+  animation: move 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 51%;
+  background: #fff;
+}
+
+.chevron:before {
+  left: 0;
+  transform: skew(0deg, 30deg);
+}
+
+.chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skew(0deg, -30deg);
+}
+
+@keyframes move {
+  25% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  67% {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  }
+}
+
+.text {
+  display: block;
+  margin-top: 75px;
+  margin-left: -30px;
+  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+  white-space: nowrap;
+  opacity: 0.25;
+  animation: pulse 2s linear alternate infinite;
+}
+
+@keyframes pulse {
+  to {
+    opacity: 1;
+  }
+}
+
+html.sr .load-hidden {
+  visibility: hidden;
+}
+
+/* extension */
+html.sr .headline {
+    visibility: hidden;
+}
+
+html.sr .About {
+    visibility: hidden;
+}
+ 
+html.sr .Education {
+    visibility: hidden;
+}
+
+html.sr .Skills {
+    visibility: hidden;
+}
+
+html.sr .Projects {
+    visibility: hidden;
+}
+
+html.sr .Connect {
+    visibility: hidden;
+}
 /* #Skills{
     background-color: rgba(10, 10, 10, 0.911);
 } */
-
 
 /* .light-mode {
     background-color: aliceblue;

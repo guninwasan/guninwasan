@@ -4,12 +4,12 @@
   border: 5px solid gray;
   margin: 0;
 } */
-
 .button1 {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
   border-radius: 50%;
 }
+
 
 body {
   background-color: rgba(10, 10, 10, 0.938);
@@ -49,13 +49,19 @@ h2 {
 h1 {
   color: aliceblue;
 }
-.circular-box {
-  position: relative;
-  left: 100px;
-  top: 100px;
-  width: 10cm;
 
-  font-size: 2cm;
+
+.circular-box {
+    display: flex;
+    /* flex-wrap: wrap; */
+  position: relative;
+  height: auto;
+  width: auto;
+  /* left: 100px;
+  top: 100px; */
+  /* width: 10cm; */
+
+  font-size:400%;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -65,7 +71,7 @@ h1 {
   border: 2px solid rgba(10, 10, 10, 0.931);
   border-radius: 50%;
   color: aliceblue;
-  padding: 10px;
+  padding:10px;
   transition-duration: 0.4s;
   /* https://www.w3schools.com/colors/colors_gradient.asp */
   background: linear-gradient(to bottom right, #ff5050 0%, #3333ff 100%);
@@ -79,6 +85,13 @@ html {
   scroll-behavior: smooth;
 }
 
+
+#Education{
+    display: flex;
+    width: auto;
+    height: auto;
+    position: relative;
+}
 /* #header-section{
     background: #99ccff;
 } */
@@ -228,11 +241,12 @@ html {
 }
 
 .vl {
+    /* display: flex; */
   border-left: 6px solid orange;
   height: 600px;
   position: relative;
   left: 50%;
-  margin-left: -3px;
+  margin-left: -3%;
   top: 0;
 }
 

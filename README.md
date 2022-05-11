@@ -4,5 +4,5 @@
 <br>
 👨‍💻 Computer Engineering Junior at the University of Toronto (UofT)
 <br>
-📫 You can reach out to me on my <a href="https://www.linkedin.com/in/guninwasan/"> LinkedIn</a> or visit my <a href="https://guninwasan.github.io/guninwasan/">Portfolio Website</a>
+📫 You can reach out to me on my <a href="https://www.linkedin.com/in/guninwasan/" target="_blank"> LinkedIn</a> or visit my <a href="https://guninwasan.github.io/guninwasan/" target="_blank">Portfolio Website</a>
 <br>

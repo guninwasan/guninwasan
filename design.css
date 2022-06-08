@@ -73,8 +73,39 @@ a:hover{ color:red;  background-color:transparent;  text-decoration:none}
 a:active{ color:yellow;  background-color:transparent;  text-decoration:underline}
 
 .bubbles{ display:flex; justify-content: space-around;}
-.bubbles-box{ height:auto;  width:auto; font-size:400%;  overflow:hidden;  text-overflow:ellipsis;  white-space:nowrap;  align-self:start;  text-align:center;  border:2px solid rgba(10,10,10,0.931);  border-radius:50%;  color:aliceblue;  padding:10px;  transition-duration:0.4s;   background:linear-gradient(to bottom right,#ff5050 0%,#33f 100%);  cursor:pointer}
-.bubbles-box:hover{ background:linear-gradient(to bottom left,#9cf 0%,#006 100%)}
+.bubbles-box{ height:auto;  width:auto; font-size:400%;  overflow:hidden;  text-overflow:ellipsis;  white-space:nowrap;  align-self:start;  text-align:center;  border:2px solid rgba(10,10,10,0.931);  border-radius:50%;  color:aliceblue;  padding:14px;  transition-duration:0.4s;   background: rgba(255, 255, 255, 0.1);
+    background-image:
+    
+      radial-gradient(8% 8% at 22% 18%,rgb(169, 224, 169) 45%,transparent 50%),
+      radial-gradient(8% 8% at 23% 17%,rgb(241, 182, 182) 45%,transparent 50%),
+      radial-gradient(8% 8% at 24% 16%,rgb(215, 215, 145) 45%,transparent 50%),
+      radial-gradient(8% 8% at 25% 15%,rgb(138, 196, 197) 45%,transparent 50%),
+      radial-gradient(8% 8% at 26% 14%,rgb(230, 193, 240) 45%,transparent 50%),
+      radial-gradient(8% 8% at 27% 13%,rgb(199, 144, 192) 45%,transparent 50%),
+      radial-gradient(8% 8% at 28% 12%,rgb(220, 153, 156) 45%,transparent 50%);
+    box-shadow:
+      0 -0.06em 0.1em hsl(0,90%,100%) inset,
+      0 -0.15em 0.4em rgb(25, 218, 11) inset,
+      0 0.05em 0.05em rgb(11, 218, 11) inset,
+      0.05em 0 0.1em hsl(0,90%,100%) inset,
+      -0.05em 0 0.1em hsl(0,90%,100%) inset,
+      0 0.1em 0.4em rgb(61, 245, 122) inset;
+    cursor: pointer;
+    height: 20vh;
+    transform-style: preserve-3d;
+    transition-property: box-shadow, transform, width, height;
+    transition-timing-function: ease-in-out, ease-in-out, var(--bubbleTiming), var(--bubbleTiming);
+    will-change: transform;
+    -webkit-appearance: none;
+    appearance: none;
+    z-index: 0;
+   cursor:pointer}
+
+.bubbles-box:hover{ box-shadow:none;
+  background: #76b852;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #8DC26F, #76b852);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #8DC26F, #76b852); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+}
 .scrollingBelow {display: none;}
 .cards{ display:flex;  flex-direction:column;  align-items:center;  justify-content:center;  margin-bottom:80px}
 .card{ box-shadow:2px 8px 14px 0px hsla(229,6%,66%,0.6);  border-radius:8px;  padding:30px;  margin:2rem 0;  max-width:400px}

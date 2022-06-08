@@ -1,100 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    /> -->
 
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
-    <meta name="google-site-verification" content="bF_ebSfb-RbHZ6GJJ3wmv_ymQlna1hmO3ISeOn37TJk" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Gunin Wasan's Portfolio</title>
     <link rel="stylesheet" href="design.css" />
     <link rel="icon" href="images/favicon.png" />
+
     <script src="https://unpkg.com/scrollreveal" defer></script>
     <script src="script.js" defer></script>
     <script
       src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
-      type="text/javascript"
-    ></script>
+      type="text/javascript">
+    </script>
+
   </head>
+
   <body>
-    <!-- We need to divide into columns here -->
-    <!-- need to cover the whole first half of the page with the animated character
-        and bubbles(boxes) with links.
-     -->
-    <!-- use spline for animated characters. now make boxes and add color -->
-    <!-- <section> -->
-    <div id="header-section">
-      <!-- <a href="page-not-found.html">
-        <button0
-          type="button"
-          class="circular-box"
-          onclick="location.href='#'"
-          style="left: 23%; width: 20"
-        >
-          Interactive Resume
-        </button>
-      </a> -->
-      <!-- Animated character made using Spline -->
-      <div id="contentframe" style="position: relative; top: 100px; left: 30%">
-        <iframe
-          src="https://my.spline.design/grogucopy-3fe6a65efb2016d12ebeb2b862d96ca8/"
-          frameborder="0"
-          width="500"
-          height="500"
-          style="position: relative; display: inline"
-        ></iframe>
+    <h1></h1>
+    <!-- Header -->
+
+    
+    <div class="header_container" id="header-section" >
+
+      <div>
+
+      <div class="bubbles">
+        <div>
+          <button
+              type="button"
+              onclick="location.href='#Education'"
+              class="bubbles-box"
+            >
+              Education
+          </button>
+        </div>
+
+        <div class="scrollingBetween"></div>
+  
+        <div>
+          <button
+              type="button"
+              onclick="location.href='#Skills'"
+              class="bubbles-box"
+            >
+              Skills
+          </button>
+        </div>
       </div>
 
-      <button
-        type="button"
-        class="circular-box"
-        onclick="location.href='#Education'"
-        style="left: 10%; top: -400px"
-      >
-        Education
-      </button>
+      <!-- Animated character made using Spline -->
+      <div class="grogu" id="contentframe" style="align-items: center; text-align: center; justify-content: center;
+      margin-right: 4vw;">
+        <iframe
+          src="animatedCharacter.html"
+          frameborder="0"
+          width="400"
+          height="400"
+          title='Animated Character'>
+        </iframe>
+      </div>
 
-      <button
-        type="button"
-        class="circular-box"
-        onclick="location.href='#Projects'"
-        style="left: 12%; top: -100px"
-      >
-        Projects
-      </button>
+      
+      <div class="bubbles">
+        <div>
+          <button
+            type="button"
+            onclick="location.href='#Projects'"
+            class="bubbles-box"
+          >
+            Projects
+          </button>
+        </div>
 
-      <button
-        type="button"
-        class="circular-box"
-        onclick="location.href='#Skills'"
-        style="left: 71%; top: -620px"
-      >
-        Skills
-      </button>
-
-      <button
-        type="button"
-        class="circular-box"
-        onclick="location.href='#Connect'"
-        style="left: 67%; top: -320px"
-      >
-        Connect
-      </button>
+        <div class="scrollingBetween">
+          <br><br><br><br>
+          <div id="scrollingBetweenBubbles">
+            <div class="chevron"></div>
+            <div class="chevron"></div>
+            <div class="chevron"></div>
+          </div>
+        </div>
+      
+        <div>
+          <button
+            type="button"
+            onclick="location.href='#Connect'"
+            class="bubbles-box"
+          >
+            Connect
+          </button>
+        </div>
+      </div>
+      </div>  
     </div>
 
-    <div id="scrolling">
-      <div class="chevron"></div>
-      <div class="chevron"></div>
-      <div class="chevron"></div>
+    <!-- Scroll down chevron -->
+    <div class="scrollingBelow">
+      <br><br><br><br>
+      <div id="scrollingBelowBubbles">
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+      </div>
     </div>
-    <!-- </section> -->
+
+    <!-- About Section here-->
     <div class="About" id="About">
       <h5 style="color: aliceblue; text-align: right; font-size: 4cm">
         <img src="images/Gunin Wasan.png" width="250" height="400" />
@@ -108,13 +122,14 @@
     <!-- To add: skills, education, projects, work exp, volunteer -->
 
     <!-- Education section here -->
-    <div class="Education" id="Education" style="display: flex">
+    <div class="Education" id="Education">
       <h3 style="filter: drop-shadow(0 0 5px rgb(74, 236, 136))">Education</h3>
+      <div style="width: 100%;">
+
       <div class="UofT" id="UofT">
-        <br /><br /><br /><br />
         <img src="images/logo.png" alt="UofT Logo" width="170" height="200" />
 
-        <h3>University of Toronto <br />&nbsp &nbsp [2020 - Present]</h3>
+        <h3>University of Toronto <br /><br />[2020 - Present]</h3>
         <h4>
           <img
             src="images/pinLocation.png"
@@ -129,23 +144,20 @@
         <h4>- Bachelor's in Applied Science and Engineering</h4>
         <h4>
           - Majoring in Computer Engineering with AI minor <br />
-          &nbsp and Business Certificate
+            and Business Certificate
         </h4>
       </div>
-      <!-- <div style = "position:relative; left:0px; top:-510px; vertical-align:left">
-              </div> -->
+
+      <div>
+        <br><br>
+        <hr>
+        <br><br>
+      </div>
+
       <div
         class="faips"
         id="faips"
-        style="justify-content: right; text-align: right"
       >
-        <br /><br /><br /><br />
-        <br /><br /><br /><br />
-        <br /><br /><br /><br />
-        <br /><br /><br /><br />
-        <br /><br /><br /><br />
-        <br /><br /><br /><br />
-        <br /><br /><br /><br />
         <img
           src="images/faips-logo.png"
           alt="FAIPS Logo"
@@ -153,8 +165,7 @@
           height="200"
         />
         <h5>
-          &nbsp Fahaheel Al Watanieh Indian Private School <br />&nbsp &nbsp
-          &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+          Fahaheel Al Watanieh Indian Private School <br><br />
           [2006 - 2020]
         </h5>
         <h4>
@@ -170,12 +181,18 @@
         </h4>
         <h4>
           - CBSE (Physics, Chemistry, Maths, Computer Science, <br />
-          &nbsp and English)
+            and English)
         </h4>
       </div>
     </div>
+    <div>
+      <br><br>
+      <br><br>
+    </div>
+    </div>
+
+
     <!-- Skills section is here -->
-    <!-- https://codepen.io/alvarotrigo/pen/VwMvydQ -->
     <div class="Skills" id="Skills">
       <h3 style="filter: drop-shadow(0 0 5px rgb(236, 74, 209))">Skills</h3>
       <div class="container">
@@ -284,11 +301,15 @@
       </div>
     </div>
 
+
+    <!-- Projects Section here -->
+    
     <div class="Projects" id="Projects">
       <h3 style="filter: drop-shadow(0 0 5px rgb(216, 243, 96))">
         Personal/School Projects
       </h3>
       <div class="cards">
+
         <div class="col">
           <a
             href="https://github.com/guninwasan/AI-Reversi-Othello-Bot"
@@ -308,6 +329,7 @@
             </div>
           </a>
         </div>
+
         <div class="col">
           <a href="https://github.com/guninwasan/TicTacToe" target="_blank">
             <div id="redCard" class="card red">
@@ -318,6 +340,7 @@
               </h6>
             </div>
           </a>
+
           <a href="https://github.com/guninwasan/BattleShips" target="_blank">
             <div class="card orange">
               <h2 style="color: rgba(240, 248, 255, 0.534)">BattleShips</h2>
@@ -330,6 +353,7 @@
               </h6>
             </div>
           </a>
+          
         </div>
         <div class="col">
           <a href="https://github.com/guninwasan/Mapability" target="_blank">
@@ -353,11 +377,11 @@
       </div>
     </div>
 
+    <!-- Connect with me section here -->
     <div class="Connect" id="Connect">
       <h3 style="filter: drop-shadow(0 0 5px rgb(245, 78, 78))">
         Connect With me!
       </h3>
-      <!-- Added icon library here-->
       <h2>
         <link
           rel="stylesheet"

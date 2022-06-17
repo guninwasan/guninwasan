@@ -26,10 +26,14 @@
   </head>
 
   <body>
-    <h1></h1>
-    <!-- Header -->
-
     
+    <h1 style="display: none;">Gunin Wasan's Portfolio Website</h1>
+    <h1 style="display: none;">
+      Hi! My name is Gunin Wasan and I'm a Computer 
+    Engineering Student at the University of Toronto (UofT) in Canada. Welcome to my
+    personal portfolio website!
+    </h1>
+
     <div class="header_container" id="header-section" >
 
       <div>
@@ -200,7 +204,7 @@
     <!-- Skills section is here -->
     <div class="Skills" id="Skills">
       <h3 style="filter: drop-shadow(0 0 5px rgb(236, 74, 209))">Skills</h3>
-      <div class="container">
+      <div class="container" onscroll="myFunction()">
         <div class="container__progressbars">
           <div class="progressbar">
             <svg class="progressbar__svg">
@@ -336,6 +340,18 @@
         </div>
 
         <div class="col">
+          <a href="./newsApp.html" target="_blank" rel="noopener" >
+            <div id="greenCard" class="card green">
+              <h2 style="color: rgba(240, 248, 255, 0.534)">News App</h2>
+              <h6 style="color: hsl(129, 78%, 62%); text-align: center">
+                A multi-platform real-time News Application in React Native. 
+                The app fetches news articles from an online news API. 
+                Users are also provided with the option to view news for a specific country 
+                and read news articles for a particular category. 
+              </h6>
+            </div>
+          </a>
+
           <a href="https://github.com/guninwasan/TicTacToe" target="_blank" rel="noopener" >
             <div id="redCard" class="card red">
               <h2 style="color: rgba(240, 248, 255, 0.534)">TicTacToe</h2>

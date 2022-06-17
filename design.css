@@ -111,6 +111,7 @@ a:active{ color:yellow;  background-color:transparent;  text-decoration:underlin
 .card{ box-shadow:2px 8px 14px 0px hsla(229,6%,66%,0.6);  border-radius:8px;  padding:30px;  margin:2rem 0;  max-width:400px}
 .card.aqua{ border-top:5px solid hsl(180,62%,55%);  margin:0}
 .card.red{ border-top:5px solid hsl(0,78%,62%)}
+.card.green{ border-top:5px solid hsl(129, 78%, 62%)}
 .card.orange{ border-top:5px solid hsl(34,97%,64%)}
 .card.blue{ border-top:5px solid hsl(212,86%,64%);  margin:0}
 
@@ -207,7 +208,10 @@ html.sr .Connect{ visibility:hidden}
 
 .card.blue:hover{ background-color:black}
 
-.card.card.orange:hover{ background-color:black}
+.card.orange:hover{ background-color:black}
+
+.card.green:hover{ background-color:black}
+
 @media screen and (max-width: 800px) {
   .circular-box {
     margin-right: auto;
